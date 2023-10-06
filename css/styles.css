@@ -1,0 +1,40 @@
+.bg-graynav {
+    background-color: #3b424b;
+}
+
+
+.card-superposition img{
+    filter: brightness(50%);
+}
+
+.card-img-overlay {
+    padding-right: 8.5rem !important;
+    padding-top: 28% !important;
+    padding-left: 25% !important;
+    height: max-content;
+}
+
+.card-title1, .card-text1, .btn-outline {
+    color: white;
+}
+
+.card-text1 {
+    font-size: 0.8rem;
+}
+
+.card-title1 {
+    font-size: 2rem;
+}
+
+.btn-success{
+    background: rgb(14, 151, 14) !important;
+}
+
+footer {
+    background-color: #154d6b;
+    margin-top: 1rem;
+}
+
+footer .bg-copy {
+    background-color: rgba(0, 0, 0, 0.4);
+}
