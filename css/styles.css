@@ -2,7 +2,6 @@
     background-color: #3b424b;
 }
 
-
 .card-superposition img{
     filter: brightness(50%);
 }
@@ -38,3 +37,61 @@ footer {
 footer .bg-copy {
     background-color: rgba(0, 0, 0, 0.4);
 }
+
+
+/* PAGINA COMPRA DE TICKETS */
+
+.row-group{
+    align-items: center;
+    padding: 0 10%;
+    /*justify-content: space-between !important;*/
+}
+
+.grupo-tickets{
+    margin-top: 8rem;
+}
+
+.card-tickets {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-tickets:hover{
+    transform: scale(0.9);
+    transition: 0.8s linear;
+    background-color: rgb(220, 220, 220);
+}
+
+.card-tickets-estudiante{
+    border: solid 1.5px rgb(40, 130, 230) !important;
+}
+
+.card-tickets-trainee{
+    border: solid 1.5px rgb(56, 190, 205) !important;
+}
+
+.card-tickets-junior{
+    border: solid 1.5px rgb(220, 190, 30) !important;
+}
+
+.formulario-tickets{
+    padding-top: 5px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.total-pagar{
+    background-color: #b1daf0 !important;
+}
+
+.container-btn-tickets{
+    align-items: center !important;
+}
+
+.btn-ticket{
+    width: 48.3%;
+    border: none !important;
+    background-color: #84cf3a !important;
+}
+
+
