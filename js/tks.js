@@ -1,8 +1,8 @@
-/* Método Resumen */ 
+/* METODO RESUMEN */ 
 
 function montoPagar () {
 
-    event.preventDefault();    
+    event.preventDefault();
 
 let cantidad = parseInt(document.getElementById("input-cantidad").value);
 let categoria = document.getElementById("select-tickets").value;
@@ -12,40 +12,43 @@ valorTotal = 0;
 
     if (cantidad > 0 && categoria > 0 && categoria <= 4) {
 
-        /* El valor 1 del select representa al primer elemento Estudiante */
+        /* CATEGORIA 1 - ESTUDIANTE */
         if (categoria == 1) {
             valorEntrada = valor * 0.2;
             valorTotal = valorEntrada * cantidad;
 
-        /* El valor 2 del select representa al segundo elemento Trainee */    
+        /* CATEGORIA 2 - TRAINEE */    
         }else if (categoria == 2) {
             valorEntrada = valor * 0.5;
             valorTotal = valorEntrada * cantidad;
         
-        /* El valor 3 del select representa al tercer elemento Junior */    
+        /* CATEGORIA 3 - JUNIOR */    
         }else if (categoria == 3) {
             valorEntrada = valor * 0.85;
             valorTotal = valorEntrada * cantidad;
+
+         /* CATEGORIA 4 - GENERAL */    
         
         } else if (categoria == 4) {
             valorEntrada = valor;
             valorTotal = valorEntrada * cantidad;
-        }    
-    } else {
+        }   
 
-        /* alerta personalizada de la librería SweetAlert2 */
-        swal.fire({
-            title: 'Error!',
-            text: 'No se ha completado un campo o se ha ingresado un valor inválido',
-            icon: "error",
-            width: '330px'
-        });
-    }  
+        } else {
+
+                /*ALERTA ERROR DE LIBRERIA SWEETALERT2 */
+                swal.fire({
+                icon: 'error', 
+                title: 'Atención!!!',
+                text: 'Indique la cantidad y/o la categoria de las entradas.',
+                width: '300px'
+                });
+            }  
     
     document.getElementById("input-total-pagar").value='Monto total a pagar: $' + valorTotal;
 }
 
-/* Método borrar */
+/* METODO BORRAR */
 
 function borrar () {
     form.reset();
